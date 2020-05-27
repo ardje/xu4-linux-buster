@@ -1,0 +1,14 @@
+set -x
+export ODROID=xu4
+#export ARCH=armhf
+export CONCURRENCY_LEVEL=10
+export DEBIAN_REVISION=3.0
+export APPEND_TO_VERSION=-ckxu4
+export EXTRAVERSION=$APPEND_TO_VERSION
+
+if [ "${PS1/[[]XU3[]]/}" = "${PS1}" ]
+then
+	PS1="[XU3] ${PS1}"
+fi
+ 
+set +x

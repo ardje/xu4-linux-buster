@@ -1,0 +1,9 @@
+#!/bin/bash -e
+. ../env
+git clean -x -d -f
+#for i in drgt-odroidxu4_defconfig exynos5422-odroid{hc1,xu{4{,-drmidi},3{,-lite}}}.dtb;do
+#for i in drgt-odroidxu4_defconfig exynos5422-odroidxu{4,3{,-lite}}.dtb;do
+#	make $i
+#done
+make drgt-odroidxu4_defconfig
+time make EXTRAVERSION=$APPEND_TO_VERSION -j10 bindeb-pkg |& tee ../build.log

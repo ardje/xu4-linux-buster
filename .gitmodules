@@ -1,0 +1,4 @@
+[submodule "linux"]
+	path = linux
+	url = git@github.com:ardje/linux
+	branch = xu4-drgt-mmk-5.4.6

@@ -1,0 +1,8 @@
+#!/bin/bash -x
+DKMS=/usr/sbin/dkms
+KSRC=$PWD/linux
+DEST=$PWD/dkms
+SRC=/usr/src
+mkdir -p $DEST
+
+$DKMS build mkbmdeb --kernelsourcedir $KSRC --dkmstree $DEST --sourcetree $SRC --no-prepare-kernel --no-clean-kernel wireguard/1.0.20200506 -k 5.4.6-ckxu4+
