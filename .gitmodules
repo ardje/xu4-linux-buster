@@ -2,3 +2,6 @@
 	path = linux
 	url = git@github.com:ardje/linux
 	branch = xu4-drgt-mmk-5.4.6
+[submodule "module-source/ip178g-1.0"]
+	path = module-source/ip178g-1.0
+	url = git@github.com:ardje/ip178g.git
